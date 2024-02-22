@@ -1,0 +1,175 @@
+body {
+  font-family: 'Rubik';
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src:url(font/Rubik-VariableFont_wght.ttf) ;
+}
+
+
+#mainTitle {
+  border-bottom: solid 1px;
+  background-color: rgb(225, 225, 225);
+  padding-top: 30px;
+  max-height: 150px;
+}
+
+#mainHeader {
+  font-size: 40pt;
+}
+
+#mainImg {
+  margin-top: 30px;
+  height: 135px;
+  float: right;
+}     
+
+ 
+@media screen and (min-width: 1000px) {
+  #body{
+    margin-top:215px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #mainImg {
+    display: none;
+  }
+  #profit {
+    display: none;
+  }
+  #body {
+    margin-top:210px;
+  } 
+ 
+}  
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+  #mainImg {
+    display: none;
+  }
+  #profit {
+    display: none;
+  }
+  #body {
+    margin-top:180px;
+  } 
+}   
+
+li {
+  margin: 2px;
+}
+
+.card-body .switch {
+  float: right;
+  display: block;
+}
+
+.card-body .card-text, .card-title {
+  display: block;
+}
+
+#moreInfo {
+  margin-top: 15px;
+  display: block;
+}
+
+.textElem {
+  display: block;
+  font-weight: bolder;
+} 
+
+.collapse {
+  margin-top: 10px;
+  border-style:groove ;
+  border-radius: 5px;
+  text-align: center;
+  padding:5px;
+}
+
+#bestWishes {
+  color: darkred;
+  margin-top: 40px;
+  background-color: aqua;
+  padding: 6px;
+}
+
+#aboutDiv {
+  direction: rtl;
+  text-align: center;
+}
+
+/* הפעלת הפופאפ */
+#btnModal {
+  display: none;
+}  
+
+#spinner {
+  display:none;
+} 
+
+body.busy .spinner {
+  display:block !important;
+}
+
+/* checkbox */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
